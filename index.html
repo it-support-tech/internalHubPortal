@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Hub Portal - NTP Company Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ntp: {
+                            blue: '#114a8f',      
+                            blueLight: '#2575fc',
+                            orange: '#f39223',   
+                            orangeLight: '#fdf3e7' 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('assets/ChatGPT Image May 19, 2026, 02_58_52 PM.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-slate-800 min-h-screen flex flex-col justify-between overflow-y-auto overflow-x-hidden relative">
+
+    <header class="w-full bg-gradient-to-r from-ntp-blue to-blue-700 text-white pt-10 pb-12 px-6 text-center rounded-b-[50px] shadow-lg sticky top-0 z-50 overflow-hidden opacity-0 transform -translate-y-4 transition-all duration-1000 ease-out" id="header">
+        <div class="absolute -top-20 -left-20 w-60 h-60 bg-white/10 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-ntp-orange/10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto flex flex-col items-center relative z-10">
+            
+            
+            <h1 class="text-2xl md:text-4xl font-extrabold mb-0.5 tracking-wide">
+                Internal Hub <span class="text-ntp-orange">Portal</span>
+            </h1>
+            <p class="text-white/80 text-[9px] md:text-xs font-bold tracking-[0.3em] uppercase">NTP Trading Petroleum Company Limited</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 flex-grow flex items-center justify-center relative z-20 mt-10 mb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl w-full" id="card-container">
+            
+            <a href="https://support.ntp-lao.com/Sap-dictionary/public/" target="_blank" class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group">
+                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
+                    <img src="assets/dictionary.jpeg" alt="SAP Dictionary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </a>
+
+            <a href="#"   class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 50ms;">
+                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
+                    <img src="assets/inventorymonitor.jpeg" alt="Fuel Inventory Monitor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </a>
+
+            <a href="#"  class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
+                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
+                    <img src="assets/manual.jpeg" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </a>
+
+           
+            
+            
+        </div>
+    </main>
+
+    <footer class="text-center opacity-10 py-6 text-xs text-slate-400 border-t border-slate-200/60 bg-white/80 backdrop-blur-sm w-full relative z-30">
+        <!-- <p>&copy; 2026 NTP Company Limited. All Rights Reserved.</p> -->
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const header = document.getElementById("header");
+            header.classList.remove("opacity-0", "translate-y-4");
+            
+            const cards = document.querySelectorAll(".service-card");
+            cards.forEach((card) => {
+                setTimeout(() => {
+                    card.classList.remove("opacity-0", "translate-y-8");
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
