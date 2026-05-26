@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+   <link rel="icon" type="image/png" href="assets/NTP White.png">
     <script>
         tailwind.config = {
             theme: {
@@ -48,8 +48,6 @@
         <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-ntp-orange/10 rounded-full blur-3xl"></div>
 
         <div class="container mx-auto flex flex-col items-center relative z-10">
-            
-            
             <h1 class="text-2xl md:text-4xl font-extrabold mb-0.5 tracking-wide">
                 Internal Hub <span class="text-ntp-orange">Portal</span>
             </h1>
@@ -58,7 +56,7 @@
     </header>
 
     <main class="container mx-auto px-6 flex-grow flex items-center justify-center relative z-20 mt-10 mb-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl w-full" id="card-container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl w-full" id="card-container">
             
             <a href="https://support.ntp-lao.com/Sap-dictionary/public/" target="_blank" class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group">
                 <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
@@ -66,27 +64,44 @@
                 </div>
             </a>
 
-            <a href="#"   class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 50ms;">
+            <a href="#" target="_blank" class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 50ms;">
                 <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
                     <img src="assets/inventorymonitor.jpeg" alt="Fuel Inventory Monitor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
             </a>
 
-            <a href="#"  class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
+            <a href="#" target="_blank" class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
                 <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
                     <img src="assets/manual.jpeg" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                 </div>
             </a>
-
-           
+            <a href="https://NTPAPPB1.Ntp-Laos.com:8100/dispatcher" target="_blank" class=" service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
+                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
+                    <img src="assets/sap X NTP.png" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                </div>
+            </a>  
             
             
         </div>
     </main>
 
-    <footer class="text-center opacity-10 py-6 text-xs text-slate-400 border-t border-slate-200/60 bg-white/80 backdrop-blur-sm w-full relative z-30">
-        <!-- <p>&copy; 2026 NTP Company Limited. All Rights Reserved.</p> -->
-    </footer>
+    <div id="comingSoonModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-out">
+        <div class="bg-white/90 backdrop-blur-lg rounded-[2.5rem] p-8 max-w-sm w-full text-center shadow-2xl border border-white/40 transform scale-90 transition-all duration-300 ease-out" id="modalBox">
+            
+            <div class="w-20 h-20 bg-ntp-orange/10 text-ntp-orange rounded-full flex items-center justify-center text-4xl mx-auto mb-5 animate-bounce">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+            
+            <h3 class="text-2xl font-black text-ntp-blue mb-2 tracking-wide">Coming Soon!</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                ລະບົບນີ້ກຳລັງຢູ່ໃນຊ່ວງພັດທະນາ ແລະ ປັບແຕ່ງລະບົບພາຍໃນ. ຈະເປີດໃຫ້ບໍລິການພະນັກງານ NTP ໄວໆນີ້!
+            </p>
+            
+            <button id="closeModalBtn" class="w-full py-3.5 px-6 bg-gradient-to-r from-ntp-blue to-blue-600 hover:from-blue-600 hover:to-ntp-blue text-white font-bold rounded-2xl shadow-lg shadow-blue-600/20 active:scale-[0.98] transition-all duration-200">
+                ຮັບຊາບ
+            </button>
+        </div>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -98,6 +113,33 @@
                 setTimeout(() => {
                     card.classList.remove("opacity-0", "translate-y-8");
                 }, 100);
+            });
+
+            const modal = document.getElementById("comingSoonModal");
+            const modalBox = document.getElementById("modalBox");
+            const notReadyLinks = document.querySelectorAll(".not-ready-link");
+            const closeModalBtn = document.getElementById("closeModalBtn");
+
+            const openModal = (e) => {
+                e.preventDefault(); // 
+                modal.classList.remove("opacity-0", "pointer-events-none");
+                modalBox.classList.remove("scale-90");
+                modalBox.classList.add("scale-100");
+            };
+
+            const closeModal = () => {
+                modal.classList.add("opacity-0", "pointer-events-none");
+                modalBox.classList.remove("scale-100");
+                modalBox.classList.add("scale-90");
+            };
+
+            notReadyLinks.forEach(link => {
+                link.addEventListener("click", openModal);
+            });
+
+            closeModalBtn.addEventListener("click", closeModal);
+            modal.addEventListener("click", (e) => {
+                if (e.target === modal) closeModal();
             });
         });
     </script>
