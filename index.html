@@ -1,152 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lo">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internal Hub Portal - NTP Company Limited</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   <link rel="icon" type="image/png" href="assets/NTP White.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="assets/NTP White.png" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        ntp: {
-                            blue: '#114a8f',      
-                            blueLight: '#2575fc',
-                            orange: '#f39223',   
-                            orangeLight: '#fdf3e7' 
-                        }
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ntp: {
+                blue: "#114a8f",
+                blueLight: "#2575fc",
+                orange: "#f39223",
+                orangeLight: "#fdf3e7",
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        body {
-            background-image: url('assets/ChatGPT Image May 19, 2026, 02_58_52 PM.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed; 
-            font-family: 'Noto Sans Lao', sans-serif;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
+      body {
+        background-image: url("assets/ChatGPT Image May 19, 2026, 02_58_52 PM.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Noto Sans Lao", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
-</head>
-<body class="text-slate-800 min-h-screen flex flex-col justify-between overflow-y-auto overflow-x-hidden relative">
+  </head>
+  <body
+    class="text-slate-800 min-h-screen flex flex-col justify-between overflow-y-auto overflow-x-hidden relative"
+  >
+    <header
+      class="w-full bg-gradient-to-r from-ntp-blue to-blue-700 text-white pt-10 pb-12 px-6 text-center rounded-b-[50px] shadow-lg sticky top-0 z-50 overflow-hidden opacity-0 transform -translate-y-4 transition-all duration-1000 ease-out"
+      id="header"
+    >
+      <div
+        class="absolute -top-20 -left-20 w-60 h-60 bg-white/10 rounded-full blur-2xl"
+      ></div>
+      <div
+        class="absolute -bottom-20 -right-20 w-80 h-80 bg-ntp-orange/10 rounded-full blur-3xl"
+      ></div>
 
-    <header class="w-full bg-gradient-to-r from-ntp-blue to-blue-700 text-white pt-10 pb-12 px-6 text-center rounded-b-[50px] shadow-lg sticky top-0 z-50 overflow-hidden opacity-0 transform -translate-y-4 transition-all duration-1000 ease-out" id="header">
-        <div class="absolute -top-20 -left-20 w-60 h-60 bg-white/10 rounded-full blur-2xl"></div>
-        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-ntp-orange/10 rounded-full blur-3xl"></div>
-
-        <div class="container mx-auto flex flex-col items-center relative z-10">
-            <h1 class="text-2xl md:text-4xl font-extrabold mb-0.5 tracking-wide">
-                Internal Hub <span class="text-ntp-orange">Portal</span>
-            </h1>
-            <p class="text-white/80 text-[9px] md:text-xs font-bold tracking-[0.3em] uppercase">NTP Trading Petroleum Company Limited</p>
-        </div>
+      <div class="container mx-auto flex flex-col items-center relative z-10">
+        <h1 class="text-2xl md:text-4xl font-extrabold mb-0.5 tracking-wide">
+          Internal Hub <span class="text-ntp-orange">Portal</span>
+        </h1>
+        <p
+          class="text-white/80 text-[9px] md:text-xs font-bold tracking-[0.3em] uppercase"
+        >
+          NTP Trading Petroleum Company Limited
+        </p>
+      </div>
     </header>
 
-    <main class="container mx-auto px-6 flex-grow flex items-center justify-center relative z-20 mt-10 mb-16">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl w-full" id="card-container">
-            
-            <a href="https://support.ntp-lao.com/Sap-dictionary/public/" target="_blank" class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group">
-                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
-                    <img src="assets/dictionary.jpeg" alt="SAP Dictionary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-            </a>
+    <main
+      class="container mx-auto px-6 flex-grow flex items-center justify-center relative z-20 mt-10 mb-16"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl w-full"
+        id="card-container"
+      >
+        <a
+          href="https://support.ntp-lao.com/Sap-dictionary/public/"
+          target="_blank"
+          class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/newDictionary.png"
+              alt="SAP Dictionary"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ລາຍການລະຫັດ SAP B1</p>
+        </a>
 
-            <a href="#" target="_blank" class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 50ms;">
-                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
-                    <img src="assets/inventorymonitor.jpeg" alt="Fuel Inventory Monitor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-            </a>
+        <a
+          href="#"
+          target="_blank"
+          class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
+          style="transition-delay: 50ms"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/newInventoryMonitor.png"
+              alt="Fuel Inventory Monitor"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ກວດສະຕ໋ອກນ້ຳມັນ</p>
+        </a>
 
-            <a href="#" target="_blank" class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
-                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
-                    <img src="assets/manual.jpeg" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-            </a>
-            <a href="https://NTPAPPB1.Ntp-Laos.com:8100/dispatcher" target="_blank" class=" service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
-                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
-                    <img src="assets/sap X NTP.png" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-            </a>  
-            <a href="https://drive.google.com/drive/folders/1aiKUVwB9ZjwEeuuqG2pwY5mVYzQz9oQu?usp=drive_link" target="_blank" class=" service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group" style="transition-delay: 100ms;">
-                <div class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-slate-50">
-                    <img src="assets/saptraining.jpeg" alt="SAP Manual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
-                </div>
-            </a>  
-            
-            
-        </div>
+        <a
+          href="#"
+          target="_blank"
+          class="not-ready-link service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
+          style="transition-delay: 100ms"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/newManual.png"
+              alt="SAP Manual"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ຄູ່ມືແກ້ບັນຫາ SAP B1</p>
+        </a>
+        <a
+          href="https://NTPAPPB1.Ntp-Laos.com:8100/dispatcher"
+          target="_blank"
+          class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
+          style="transition-delay: 100ms"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/NTP X Sap.png"
+              alt="SAP Manual"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ເຂົ້າລະບົບ SAP B1</p>
+        </a>
+        <a
+          href="https://drive.google.com/drive/folders/1aiKUVwB9ZjwEeuuqG2pwY5mVYzQz9oQu?usp=drive_link"
+          target="_blank"
+          class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
+          style="transition-delay: 100ms"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/newSaptraning.png"
+              alt="SAP Manual"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ຂໍ້ມູນຕ່າງໆກ່ຽວກັບ SAP B1</p>
+        </a>
+      </div>
     </main>
 
-    <div id="comingSoonModal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-out">
-        <div class="bg-white/90 backdrop-blur-lg rounded-[2.5rem] p-8 max-w-sm w-full text-center shadow-2xl border border-white/40 transform scale-90 transition-all duration-300 ease-out" id="modalBox">
-            
-            <div class="w-20 h-20 bg-ntp-orange/10 text-ntp-orange rounded-full flex items-center justify-center text-4xl mx-auto mb-5 animate-bounce">
-                <i class="fa-solid fa-rocket"></i>
-            </div>
-            
-            <h3 class="text-2xl font-black text-ntp-blue mb-2 tracking-wide">Coming Soon!</h3>
-            <p class="text-slate-600 text-sm leading-relaxed mb-6">
-                ລະບົບນີ້ກຳລັງຢູ່ໃນຊ່ວງພັດທະນາ ແລະ ປັບແຕ່ງລະບົບພາຍໃນ. ຈະເປີດໃຫ້ບໍລິການພະນັກງານ NTP ໄວໆນີ້!
-            </p>
-            
-            <button id="closeModalBtn" class="w-full py-3.5 px-6 bg-gradient-to-r from-ntp-blue to-blue-600 hover:from-blue-600 hover:to-ntp-blue text-white font-bold rounded-2xl shadow-lg shadow-blue-600/20 active:scale-[0.98] transition-all duration-200">
-                ຮັບຊາບ
-            </button>
+    <div
+      id="comingSoonModal"
+      class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-out"
+    >
+      <div
+        class="bg-white/90 backdrop-blur-lg rounded-[2.5rem] p-8 max-w-sm w-full text-center shadow-2xl border border-white/40 transform scale-90 transition-all duration-300 ease-out"
+        id="modalBox"
+      >
+        <div
+          class="w-20 h-20 bg-ntp-orange/10 text-ntp-orange rounded-full flex items-center justify-center text-4xl mx-auto mb-5 animate-bounce"
+        >
+          <i class="fa-solid fa-rocket"></i>
         </div>
+
+        <h3 class="text-2xl font-black text-ntp-blue mb-2 tracking-wide">
+          Coming Soon!
+        </h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+          ລະບົບນີ້ກຳລັງຢູ່ໃນຊ່ວງພັດທະນາ ແລະ ປັບແຕ່ງລະບົບພາຍໃນ.
+          ຈະເປີດໃຫ້ບໍລິການພະນັກງານ NTP ໄວໆນີ້!
+        </p>
+
+        <button
+          id="closeModalBtn"
+          class="w-full py-3.5 px-6 bg-gradient-to-r from-ntp-blue to-blue-600 hover:from-blue-600 hover:to-ntp-blue text-white font-bold rounded-2xl shadow-lg shadow-blue-600/20 active:scale-[0.98] transition-all duration-200"
+        >
+          ຮັບຊາບ
+        </button>
+      </div>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const header = document.getElementById("header");
-            header.classList.remove("opacity-0", "translate-y-4");
-            
-            const cards = document.querySelectorAll(".service-card");
-            cards.forEach((card) => {
-                setTimeout(() => {
-                    card.classList.remove("opacity-0", "translate-y-8");
-                }, 100);
-            });
+      document.addEventListener("DOMContentLoaded", () => {
+        const header = document.getElementById("header");
+        header.classList.remove("opacity-0", "translate-y-4");
 
-            const modal = document.getElementById("comingSoonModal");
-            const modalBox = document.getElementById("modalBox");
-            const notReadyLinks = document.querySelectorAll(".not-ready-link");
-            const closeModalBtn = document.getElementById("closeModalBtn");
-
-            const openModal = (e) => {
-                e.preventDefault(); // 
-                modal.classList.remove("opacity-0", "pointer-events-none");
-                modalBox.classList.remove("scale-90");
-                modalBox.classList.add("scale-100");
-            };
-
-            const closeModal = () => {
-                modal.classList.add("opacity-0", "pointer-events-none");
-                modalBox.classList.remove("scale-100");
-                modalBox.classList.add("scale-90");
-            };
-
-            notReadyLinks.forEach(link => {
-                link.addEventListener("click", openModal);
-            });
-
-            closeModalBtn.addEventListener("click", closeModal);
-            modal.addEventListener("click", (e) => {
-                if (e.target === modal) closeModal();
-            });
+        const cards = document.querySelectorAll(".service-card");
+        cards.forEach((card) => {
+          setTimeout(() => {
+            card.classList.remove("opacity-0", "translate-y-8");
+          }, 100);
         });
+
+        const modal = document.getElementById("comingSoonModal");
+        const modalBox = document.getElementById("modalBox");
+        const notReadyLinks = document.querySelectorAll(".not-ready-link");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+
+        const openModal = (e) => {
+          e.preventDefault(); //
+          modal.classList.remove("opacity-0", "pointer-events-none");
+          modalBox.classList.remove("scale-90");
+          modalBox.classList.add("scale-100");
+        };
+
+        const closeModal = () => {
+          modal.classList.add("opacity-0", "pointer-events-none");
+          modalBox.classList.remove("scale-100");
+          modalBox.classList.add("scale-90");
+        };
+
+        notReadyLinks.forEach((link) => {
+          link.addEventListener("click", openModal);
+        });
+
+        closeModalBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeModal();
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
