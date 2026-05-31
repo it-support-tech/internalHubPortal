@@ -132,11 +132,12 @@
           </div>
           <p class="text-white mt-2">ຄູ່ມືແກ້ບັນຫາ SAP B1</p>
         </a>
+        
         <a
           href="https://NTPAPPB1.Ntp-Laos.com:8100/dispatcher"
           target="_blank"
           class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
-          style="transition-delay: 100ms"
+          style="transition-delay: 150ms"
         >
           <div
             class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
@@ -149,11 +150,12 @@
           </div>
           <p class="text-white mt-2">ເຂົ້າລະບົບ SAP B1</p>
         </a>
+        
         <a
           href="https://drive.google.com/drive/folders/1aiKUVwB9ZjwEeuuqG2pwY5mVYzQz9oQu?usp=drive_link"
           target="_blank"
           class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group"
-          style="transition-delay: 100ms"
+          style="transition-delay: 200ms"
         >
           <div
             class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
@@ -166,6 +168,23 @@
           </div>
           <p class="text-white mt-2">ຂໍ້ມູນຕ່າງໆກ່ຽວກັບ SAP B1</p>
         </a>
+        
+        <button
+          id="planCardBtn"
+          class="service-card opacity-0 transform translate-y-8 backdrop-blur-sm border border-slate-200/60 rounded-[2.5rem] p-4 shadow-lg transition-all duration-300 hover:border-ntp-blue hover:-translate-y-2 hover:shadow-2xl hover:shadow-ntp-blue/20 text-center flex flex-col items-center justify-center group cursor-pointer w-full"
+          style="transition-delay: 250ms"
+        >
+          <div
+            class="overflow-hidden rounded-[2rem] w-full aspect-square flex items-center justify-center bg-transparent"
+          >
+            <img
+              src="assets/planning.png"
+              alt="SAP Plan"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <p class="text-white mt-2">ແຜນ</p>
+        </button>
       </div>
     </main>
 
@@ -200,6 +219,33 @@
       </div>
     </div>
 
+    <div
+      id="imagePreviewModal"
+      class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 ease-out"
+    >
+      <button 
+        id="closeImageModalBtn" 
+        class="absolute top-6 right-6 text-white text-3xl hover:text-ntp-orange transition-colors cursor-pointer z-50 p-2"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div
+        class="max-w-4xl w-full max-h-[85vh] flex items-center justify-center transform scale-90 transition-all duration-300 ease-out"
+        id="imageModalBox"
+      >
+        <img
+          src="assets/planning.jpeg"
+          alt="NTP Plan View"
+          class="max-w-full max-h-[85vh] object-contain rounded-2xl shadow-2xl border border-white/10"
+        />
+      </div>
+    </div>
+
+    <footer class="bg-transparent text-white/60 text-[11px] py-4 text-center relative z-20">
+      <p>© 2026 NTP Company Limited. All Rights Reserved.</p>
+    </footer>
+
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const header = document.getElementById("header");
@@ -218,7 +264,7 @@
         const closeModalBtn = document.getElementById("closeModalBtn");
 
         const openModal = (e) => {
-          e.preventDefault(); //
+          e.preventDefault(); 
           modal.classList.remove("opacity-0", "pointer-events-none");
           modalBox.classList.remove("scale-90");
           modalBox.classList.add("scale-100");
@@ -237,6 +283,29 @@
         closeModalBtn.addEventListener("click", closeModal);
         modal.addEventListener("click", (e) => {
           if (e.target === modal) closeModal();
+        });
+
+        const imgModal = document.getElementById("imagePreviewModal");
+        const imgModalBox = document.getElementById("imageModalBox");
+        const planCardBtn = document.getElementById("planCardBtn");
+        const closeImageModalBtn = document.getElementById("closeImageModalBtn");
+
+        const openImageModal = () => {
+          imgModal.classList.remove("opacity-0", "pointer-events-none");
+          imgModalBox.classList.remove("scale-90");
+          imgModalBox.classList.add("scale-100");
+        };
+
+        const closeImageModal = () => {
+          imgModal.classList.add("opacity-0", "pointer-events-none");
+          imgModalBox.classList.remove("scale-100");
+          imgModalBox.classList.add("scale-90");
+        };
+
+        planCardBtn.addEventListener("click", openImageModal);
+        closeImageModalBtn.addEventListener("click", closeImageModal);
+        imgModal.addEventListener("click", (e) => {
+          if (e.target === imgModal) closeImageModal();
         });
       });
     </script>
